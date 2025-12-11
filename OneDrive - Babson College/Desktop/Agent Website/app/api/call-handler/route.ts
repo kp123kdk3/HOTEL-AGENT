@@ -93,7 +93,7 @@ When answering questions, be natural and conversational. Show enthusiasm about t
 
       // Gather user input
       const gather = twilioResponse.gather({
-        input: "speech",
+        input: ["speech"] as any,
         speechTimeout: "auto",
         language: "en-US",
         action: "/api/call-handler",
@@ -145,7 +145,7 @@ When answering questions, be natural and conversational. Show enthusiasm about t
 
       // Continue gathering input
       const gather = twilioResponse.gather({
-        input: "speech",
+        input: ["speech"] as any,
         speechTimeout: "auto",
         language: "en-US",
         action: "/api/call-handler",
